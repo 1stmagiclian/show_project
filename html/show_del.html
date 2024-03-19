@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文化计算大脑生产工具可视化平台</title>
+  <link rel="stylesheet" href="../css/show_del.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <header id="nav-menu" aria-label="navigation bar">
+    <div class="containernew">
+      <div class="nav-start">
+        <a class="logo" href="https://www.bupt.edu.cn/">
+          <img src="../img/logo2.png" />
+        </a>
+        <nav class="menu">
+          <ul class="menu-bar">
+            <li>
+              <button class="nav-link dropdown-btn"        data-dropdown="dropdown1"
+                aria-haspopup="true" aria-expanded="false" aria-label="browse">工具箱
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div id="dropdown1" class="dropdown">
+                <ul role="menu">
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#best-of-the-day">
+                      <img src="../assets/icons/botd.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">图像分割</span>
+                        <p>Image Segment Function</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#featured-streams">
+                      <img src="../assets/icons/fs.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">图像标注</span>
+                        <p>Image Annotation Function</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#subscriptions">
+                      <img src="../assets/icons/sp.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">知识图谱</span>
+                        <p>Knowledge Graph</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#creative-feed">
+                      <img src="../assets/icons/cf.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">重构</span>
+                        <p>Refactoring techniques</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="nav-link" href="/">介绍</a></li>
+            <li><a class="nav-link" href="/">生态</a></li>
+            <li><a class="nav-link" href="/">其他</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-end">
+        <div class="right-container">
+          <form class="search" role="search">
+            <input type="search" name="search" placeholder="Search" />
+            <i class="bx bx-search" aria-hidden="true"></i>
+          </form>
+
+          <a href="https://www.bupt.edu.cn/">
+            <img
+              src="../assets/images/logo.png"width="30"height="30"alt="user image"
+            />
+          </a>
+          <button class="btn btn-primary">Create</button>
+        </div>
+
+        <button
+          id="hamburger"
+          aria-label="hamburger"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="main-container">
+    <h1>文化计算大脑生产工具可视化平台</h1>
+    <p style="text-align: center; margin-bottom: 40px;">在这里写下介绍文字...</p>
+  
+  
+    <div class="focus">
+      <a href="#" class="arrow-l">&lt;</a>
+      <a href="#" class="arrow-r">&gt;</a>
+      <ul>
+        <li><a href="#"><img src="../img/1.jpg" alt="Slide 1"></a></li>
+        <li><a href="#"><img src="../img/2.jpg" alt="Slide 2"></a></li>
+        <li><a href="#"><img src="../img/3.jpeg" alt="Slide 3"></a></li>
+      </ul>
+      <ol class="circle"></ol>
+    </div>
+  
+   
+  
+    <div class="container">
+      <div class="box">
+        <h2 class="box-title">Section 1</h2>
+        <div class="box-content">
+          <p>This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.</p>
+          <img src="img/1.jpg" alt="Box 1">
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="box-title">Section 2</h2>
+        <div class="box-content">
+          <p>This is the description of the second section.</p>
+          <img src="" alt="Box 2">
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="box-title">Section 3</h2>
+        <div class="box-content">
+          <p>This is the description of the third section.</p>
+          <img src=" " alt="Box 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleDropdown() {
+      var dropdownContent = document.getElementById("dropdownContent");
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    }
+  </script>
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/show.js"></script>
+</body>
+</html>

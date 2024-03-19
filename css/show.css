@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*解决页面右侧元素溢出问题*/
+html{
+  width:100%;
+  overflow-x:hidden;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+.logo img {
+    height: 70px;
+    width: 270px;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 设置框之间的间距 */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.box {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.box-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-content p {
+  flex: 1;
+  margin-right: 20px; 
+  color: #666;
+}
+
+.box-content img {
+  max-width: 50%; 
+  height: auto;
+  border-radius: 5px;
+}
+
+
+h1 {
+  text-align: center; /* 让标题居中 */
+  margin-top: 20px; /* 增加顶部间距 */
+  margin-bottom: 20px; /* 增加底部间距 */
+}
+
+
+/* 轮播图样式 */
+.banner{
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  width: 820px;
+  height: 450px;
+  border-radius: 10px;
+}
+li{
+  list-style:none;
+}
+.banner ul li{
+  display:none;
+  position:absolute;
+}
+.banner ul li:first-child{
+  display:block;
+}
+.banner ul li a{
+  display:block;
+}
+.banner ul li a img{
+  border-radius: 5px;
+  width:820px;
+  height:450px;
+}
+
+.arrow span {
+  width:20px;
+  height:30px;
+  background:rgba(0,0,0,0.05);
+  color:#fff;
+  position:absolute;
+  top:50%;
+  transform:translate(0,-50%);
+  line-height:30px;
+  text-align:center;
+  font-size:20px;
+  cursor:pointer;
+}
+.arrow-l{
+  left:20px;
+}
+.arrow-r{
+  right:20px;
+}
+.banner ol{
+  position:absolute;
+  bottom:30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+.banner ol li {
+  float: left;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.4);
+  margin-left:12px;
+  cursor:pointer;
+  border:2px solid rgba(255,255,255,0.3);
+}
+.banner ol li.dot{
+  border:2px solid rgba(0,0,0,0.4);
+  background:#fff;
+}
+
+
+

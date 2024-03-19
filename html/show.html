@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文化计算大脑生产工具可视化平台</title>
+  <link rel="stylesheet" href="../css/show.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <header id="nav-menu" aria-label="navigation bar">
+    <div class="containernew">
+      <div class="nav-start">
+        <a class="logo" href="https://www.bupt.edu.cn/">
+          <img src="../img/logo2.png" />
+        </a>
+        <nav class="menu">
+          <ul class="menu-bar">
+            <li>
+              <button class="nav-link dropdown-btn" data-dropdown="dropdown1"
+                aria-haspopup="true" aria-expanded="false" aria-label="browse">工具箱
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div id="dropdown1" class="dropdown">
+                <ul role="menu">
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#best-of-the-day">
+                      <img src="../assets/icons/botd.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">图像分割</span>
+                        <p>Image Segment Function</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#featured-streams">
+                      <img src="../assets/icons/fs.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">图像标注</span>
+                        <p>Image Annotation Function</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#subscriptions">
+                      <img src="../assets/icons/sp.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">知识图谱</span>
+                        <p>Knowledge Graph</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#creative-feed">
+                      <img src="../assets/icons/cf.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">重构</span>
+                        <p>Refactoring techniques</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="nav-link" href="/">介绍</a></li>
+            <li><a class="nav-link" href="/">生态</a></li>
+            <li><a class="nav-link" href="/">其他</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-end">
+        <div class="right-container">
+          <form class="search" role="search">
+            <input type="search" name="search" placeholder="Search" />
+            <i class="bx bx-search" aria-hidden="true"></i>
+          </form>
+
+          <a href="https://www.bupt.edu.cn/">
+            <img
+              src="../assets/images/logo.png"width="30"height="30"alt="user image"
+            />
+          </a>
+          <button class="btn btn-primary">Create</button>
+        </div>
+
+        <button
+          id="hamburger"
+          aria-label="hamburger"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="main-container">
+    <h1>文化计算大脑生产工具可视化平台</h1>
+    <p style="text-align: center; margin-bottom: 40px;">在这里写下介绍文字...</p>
+  
+  
+    <div class="banner">
+      <ul>
+          <li><a href="#"><img src="../img/1.jpg" alt="Slide 1"></a></li>
+          <li><a href="#"><img src="../img/2.jpg" alt="Slide 2"></a></li>
+          <li><a href="#"><img src="../img/3.jpeg" alt="Slide 3"></a></li>
+      </ul>
+
+      <div class="arrow">
+        <span class="arrow-l"><</span>
+        <span class="arrow-r">></span>
+      </div>
+
+      <ol>
+        <li class="dot"></li>
+        <li></li>
+        <li></li>
+    </ol>
+    </div>
+   
+  
+    <div class="container">
+      <div class="box">
+        <h2 class="box-title">Section 1</h2>
+        <div class="box-content">
+          <p>This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.This is the description of the first section.</p>
+          <img src="../img/1.jpg" alt="Box 1">
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="box-title">Section 2</h2>
+        <div class="box-content">
+          <p>This is the description of the second section.</p>
+          <img src="" alt="Box 2">
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="box-title">Section 3</h2>
+        <div class="box-content">
+          <p>This is the description of the third section.</p>
+          <img src=" " alt="Box 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+
+<script>
+  //切换图片函数
+  function bannerImg(count,Img,dot) {
+      //让索引为count的li元素显示出来,siblings其他li元素隐藏
+      $(Img).eq(count).stop("slow").fadeIn().siblings("li").stop().fadeOut("slow");
+      //切换当前索引的小圆点样式
+      $(dot).eq(count).addClass("dot").siblings("li").removeClass("dot");
+  }
+
+  $(function () {
+      var count = 0;
+      var banImg = $(".banner ul li");
+      var bandot = $(".banner ol li");
+      //下一张
+      $(".arrow-r").click(function () {
+          count++;
+          if (count == banImg.length) {
+              count = 0;
+          }
+          bannerImg(count, banImg, bandot);
+      });
+      //上一张
+      $(".arrow-l").click(function () {
+          count--;
+          if (count < 0) {
+              count = banImg.length - 2;
+          }
+          bannerImg(count, banImg, bandot);
+      });
+
+      //小圆点控制轮播
+      $(bandot).click(function () {
+          count = $(this).index();
+          bannerImg(count, banImg, bandot);
+      })
+
+      //定时器轮播
+      var adTimer;
+      adTimer = setInterval(function () {
+          count++;
+          if (count == banImg.length) {
+              count = 0;
+          }
+          bannerImg(count, banImg, bandot);
+      }, 3000);
+
+      //鼠标移入停止轮播
+      $(".banner").mouseover(function () {
+          clearInterval(adTimer);
+      });
+      //鼠标移出开始轮播
+      $(".banner").mouseout(function () {
+          adTimer = setInterval(function () {
+              count++;
+              if (count == banImg.length) {
+                  count = 0;
+              }
+              bannerImg(count, banImg, bandot);
+          }, 3000);
+      });
+  }) 
+</script>
+</body>
+</html>
